@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Boekoe Documentation</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript" src="js/ddaccordion.js"></script>
+<script type="text/javascript" src="js/faq-functions.js" ></script>
+<script type="text/javascript" src="js/jquery.coda-slider-2.0.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//Coda Slider for Content Setting
+		$('#content-slider').codaSlider();({
+		});
+		
+		//Tab Jquery
+		$(".tab_content").hide(); 
+		$("ul.tabs li:first").addClass("active").show(); 
+		$(".tab_content:first").show(); 
+		$("ul.tabs li").click(function() {
+			$("ul.tabs li").removeClass("active");
+			$(this).addClass("active"); 
+			$(".tab_content").hide(); 
+			var activeTab = $(this).find("a").attr("href"); 
+			$(activeTab).fadeIn(); 
+			return false;
+		});			
+     });
+</script>
+</head>
+
+<body>	
+	<div id="container">
+    	
+        <!-- begin of header -->
+        <div id="table-content-wrapper">
+    		<ul id="table-content">
+            	<li><a class="xtrig" href="#1" rel="coda-slider-1">Cover</a></li>	
+            	<li><a class="xtrig" href="#2" rel="coda-slider-1">The Package</a></li> 
+                <li><a class="xtrig" href="#3" rel="coda-slider-1">HTML &amp; Site Structure</a></li>
+                <li><a class="xtrig" href="#4" rel="coda-slider-1">Logo &amp; Menu</a></li>
+                <li><a class="xtrig" href="#5" rel="coda-slider-1">How To</a></li>
+                <li class="last"><a class="xtrig" href="#6" rel="coda-slider-1">Sources &amp; Credits</a></li>               
+            </ul>
+    	</div>    	
+        <!-- end of header -->        
+      	
+        <div class="coda-slider preload" id="content-slider">
+        	
+            
+            <!-- BEGIN OF PAGE1 -->            
+                <div class="panel">
+                    <div class="panel-wrapper">
+                        
+                    	<div id="page1">
+                
+                            <div id="logo"><img src="images/logo.png" alt="indonez logo" /></div>
+                            <div id="pre-text">
+                               <h5>Hi, Thanks for purchasing our template</h5>
+                               <h5>Boekoe is business landing page, it's focused on book publisher and also can be used for others business types. Boekoe template used UIKit framework for flexibility and agility, and developed with HTML5 and CSS3 for modern web standard. Also, there's 2 homepage layout variations that can be switched with your feels and looks.</h5>
+                             </div>                
+                            
+                       </div>  
+                        
+                    </div>
+                </div>            
+            <!-- END OF PAGE1 -->
+            
+            <!-- BEGIN OF PAGE2 -->           
+                <div class="panel">
+                    <div class="panel-wrapper">
+                        
+                    	<div id="page2">           
+                            <div class="col-1">
+                                <h4>The Package</h4>
+                                <p>Boekoe download package contains of 3 folder, the folder is "documentation", "html" and "psd". The main file of html file is under folder "html", and here the structure of file from of Boekoe html.</p>
+                                <img src="images/file-structure.jpg" alt="" class="imgborder imgcenter" />             		
+                                
+                                <h4>HTML Files</h4>
+                                <ul class="circle-list">
+                                    <li>
+                                        <div class="left-list">index.html</div>
+                                        Main homepage layout
+                                    </li>
+                                    <li>
+                                        <div class="left-list">index2.html</div>
+                                        Second homepage layout
+                                    </li>                                   
+                                </ul>
+                            </div>                 
+                   </div> 
+                        
+                    </div>
+                </div>            
+            <!-- END OF PAGE2 -->
+            
+            <!-- BEGIN OF PAGE3 -->            
+                <div class="panel">
+                    <div class="panel-wrapper">
+                        
+                    	<div id="page3">           
+               
+                                <div class="col-3">
+                                    <h4>HTML Structure</h4>
+                                    <p>The layout in Boekoe is flexible because this use "grid" system based on uikit, so you can make any configuration of column (please refer the "http://getuikit.com/docs/grid.html" for some sample of column). Navigation menu is within a nav with an id of "idz-nav" and mobile navigation menu is within a nav with an id of "mobile-nav". The general template structure is the same throughout the template. Here is the general structure :</p>
+                               </div>
+                               <div class="col-2-2-last">                   		
+                                    <img src="images/html-structure.jpg" alt="" class="imgborder" />  
+                               </div>
+                               <div class="col-3">
+                                    <h4>Visual Structure</h4>
+                                    <p>The page have four main blocks : header,  content-area, before-footer and footer each block consisting of each sections and element present in it. </p>
+                               </div>
+                               <div class="col-2-2-last">                   		
+                                    <img src="images/visual-structure.jpg" alt="" class="imgborder" />  
+                               </div>                   
+                            
+                       </div>  
+                        
+                    </div>
+                </div>            
+            <!-- END OF PAGE3 -->       
+            
+            <!-- BEGIN OF PAGE5 -->            
+                <div class="panel">
+                    <div class="panel-wrapper">
+                        
+                    	<div id="page5">
+                      
+                            <div class="col-1">    
+                               <h4>Logo</h4>
+                               <p>To edit the logo you can simply replace the "logo.png" for normal logo position and "logo-sticky.png" for secondary logo when sticky menu active, it's happened when scroll down the page, the logo files located in images folder. The recommended logo height size us 50px.</p>
+                               <img src="images/logo-structure.jpg" alt="" class="imgborder imgcenter" />             
+                               <h4>Menu</h4>
+                               <p>Menu at this template is use horizontal menu style, as shown in below image, it's used scrollspy feature from UIKIT to navigate each menu ID's to each sections with the same ID's, please follow below image for detail.</p>
+                               <img src="images/menu-structure.jpg" alt="" class="imgborder imgcenter" />  
+                            </div>
+                                 
+                       </div>  
+                        
+                    </div>
+                </div>           
+            <!-- END OF PAGE5 -->
+            
+           <!-- BEGIN OF PAGE7 -->            
+                <div class="panel">
+                    <div class="panel-wrapper">
+                        
+                    	<div id="page7">                                                     
+                                 
+                                 <div class="col-3">
+                                    <h4>How to make a new Favicon ?</h4>
+                                    <p>First you must make image on size 32x32 pixel, and save in png format, after that go to this site : <a href="http://tools.dynamicdrive.com/favicon/">http://tools.dynamicdrive.com/favicon/</a> and create your "favicon.ico" there and replace the old "favicon.ico" in image folder with your new favicon.ico</p>                                                                        
+                                 </div>   
+                                 <div class="col-2-2-last">
+                                 	<img src="images/favicon-sett.jpg" alt="" class="imgborder" />
+                                 </div>                         
+                                                            
+                            
+                       </div> 
+                        
+                    </div>
+                </div>            
+            <!-- END OF PAGE7 -->     
+            
+            <!-- BEGIN OF PAGE8 -->            
+                <div class="panel">
+                    <div class="panel-wrapper">
+                        
+                    	<div id="page9">           
+           
+                            <div class="col-1">
+							   <h4>HTML Frmaework</h4>
+                                <ul class="circle-list">
+									<li><a href="http://getuikit.com/">UIKIT</a></li>
+								</ul>
+							   
+                               <h4>Sources &amp; Credits</h4>
+                               <p>All image use on this theme are free and from :</p>
+                               <ul class="circle-list">
+                               		<li>
+                                        <div class="left-list2"><a href="https://graphicriver.net/item/cloud-servers/4237350">Graphicriver image link </a></div>
+                                       used on landing page 2
+                                    </li>
+                                    <li>
+                                        <div class="left-list2"><a href="https://photodune.net/item/man-with-laptop/1859750">Photodune image link </a></div>
+                                        used on landing page 4
+                                    </li>
+                               		<li>
+                                        <div class="left-list2"><a href="https://graphicriver.net/item/clean-hosting-slider/12091131">Graphicriver image link </a></div>
+                                       used on landing page 4
+                                    </li>
+                                    <li>
+                                        <div class="left-list2"><a href="https://graphicriver.net/item/isometric-servers/5689747">Graphicriver image link</a></div>
+                                        used on landing page 3
+                                    </li>
+                                    <li>
+                                        <div class="left-list2"><a href="https://photodune.net/item/young-man-with-tablet/7460009">Photodune image link </a></div>
+                                         used on landing page 3
+                                    </li>
+                                                                                            
+                                                                                         
+                                </ul> 
+                            
+                            </div>                     
+                            
+                            <div class="divider"></div>
+                            <div class="clear"></div>
+                            
+                            <div class="col-1">
+                            	<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+                                <p>Thanks,<br/>Indonez</p>
+                            </div>                           
+                                 
+                       </div>
+                        
+                    </div>
+                </div>            
+            <!-- END OF PAGE8 -->   
+                
+        </div><!-- .coda-slider -->       
+         	
+    	<div class="clear"></div>	       
+    </div>         
+   
+</body>
+</html>
